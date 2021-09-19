@@ -1,0 +1,26 @@
+<section class="">
+    <div class="heading text-center">
+        <img src="../../assets/images/totalwar.jpg" alt="" class="w-100">
+    </div>
+
+    <br>
+    <br>
+    <div class="row  mt-3" >
+    <div class="col-lg-4 col-md-6 col-12" *ngFor="let wheyp of wheyProduct">
+
+        <div class="card" style="width: 20rem;">
+            <img [src]="wheyp.img" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{wheyp.heading}}</h5>
+              <p class="card-price">{{wheyp.price}}</p>
+              <a (click)=addtocart(wheyp) class="btn btn-dark">Add to cart</a>
+              
+            </div>
+          </div>
+
+    </div>
+</div>
+<br>
+<br>
+
+</section>

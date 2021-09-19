@@ -1,0 +1,110 @@
+<!--NAVBAR SECTION-->
+<div class="nav-footer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container py-3">
+        <a class="navbar-brand" href="#">DurrahNation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Supplements
+              </a>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="whey">Whey Protein</a></li>
+                <li><a class="dropdown-item" routerLink="crea">Creatine and Glutamine</a></li>
+                <li><a class="dropdown-item" routerLink="fatburner">Fatburner</a></li>
+                <li><a class="dropdown-item" routerLink="fatburner">x</a></li>
+              </ul>
+            </li>
+                        
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="contact">Contact Us</a>
+            </li>
+           <li class="nav-item">
+                         <button class="btn btn-primary" routerLink="cart">
+                          <img src="../../assets/images/cart.png" width="25" height="25">
+                          <div style="font-size:10px;" class="badge bg-danger">{{totalitem}}</div>
+                         </button>
+                       </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+    <!--ROUTER OUTLET-->
+    <router-outlet></router-outlet> <!-- Between Nav/Footer-->
+    
+
+
+
+    <!--FOOTER SECTION-->
+      <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">DurrahNation is a mission-based company founded on a simple principle – create the highest quality supplements for people who trained, for people that need to be at their best. Whether you're looking to get the most out of your workout or your workday – try DurrahNation..</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#">Whey Proteins</a></li>
+            <li><a href="#">Creatines</a></li>
+            <li><a href="#">Glutamines</a></li>
+            <li><a href="#">PreWorkout</a></li>
+            <li><a href="#">Bcaas</a></li>
+            <li><a href="#">Merches</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+       <a href="#">DurrahNation</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/redcon1/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/redcon1official?lang=en"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/redcon1/?hl=en"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>

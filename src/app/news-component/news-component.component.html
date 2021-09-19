@@ -1,0 +1,24 @@
+<section class="news text-center my-5">
+    <div class="container">
+        <div class="bg-dark text-white p-3">
+            <h1>Latest News Live</h1>
+        </div>
+       
+        <hr>
+            <div class="row mt-3">
+                <div class="col-md-4 col-sm-12 my-2" *ngFor="let new of news">
+                    <div class="card">
+                        <img [src]="new.urlToImage" alt="" class="card-img-top" style="width:25rem"/>
+                            <div class="card-body">
+                                <h5 class="card-title">{{new.title}}</h5>
+                                <p class="card-text">{{new.description}}</p>
+                                <hr>
+                                <p class="card-text">{{new.publishedAt}}</p>
+
+                                <a [href]="new.url" class="btn btn-outline-info" target="_blank">Show More</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

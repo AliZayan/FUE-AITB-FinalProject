@@ -1,0 +1,31 @@
+video {
+    width: 100%    !important;
+    height:auto !important;
+  }
+
+
+
+.row{
+
+font-family:cursive;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 2.5rem;
+  color: white;
+}
+.FF {
+  font-family:cursive;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 2.5rem;
+  color: white
+}
+
+.bg{
+
+  background: #000;
+}

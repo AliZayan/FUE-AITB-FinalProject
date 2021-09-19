@@ -1,0 +1,63 @@
+<header class="container bg-dark text-light my-5 p-4 text-center">
+    <h1> Contact Us</h1>
+    <hr>
+    
+    </header>
+    <section class="contact container my-5">
+        <form action="" [formGroup]="ContactForm" (ngSubmit)="onUserSubmit()">
+           
+            <div class="form-group p-2">
+             <label for="username">Username</label>
+            <input type="text" name="username" id="username"
+            required formControlName="username" class="form-control mt-2"> 
+            </div>
+    
+            
+            <!-- Username is Required -->
+            <div *ngIf="ContactForm.controls.username.touched && ContactForm.controls.username.errors?.required" 
+                class="alert alert-danger">
+                    <marquee behavior="" direction="">
+                        UserName is Required
+                     </marquee>
+            </div> 
+            
+    
+            <div class="form-group p-2">
+             <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            required formControlName="email" class="form-control mt-2"> 
+            </div>
+    
+    
+            <!-- Email is Required -->
+            <div *ngIf="ContactForm.controls.email.touched && ContactForm.controls.email.errors?.required"
+                class="alert alert-danger">
+                    <marquee behavior="" direction="">
+                       Email is Required
+                     </marquee>
+            </div> 
+            
+          
+    
+    
+            <div class="form-group p-2">
+                <label for="message">Message</label>
+          <textarea name="message" id="message"
+          class="form-control mt-2" cols="30" rows="10" formControlName="message"></textarea>
+            </div>
+        
+            <!-- Message is Required -->
+      <div *ngIf="ContactForm.controls.message.touched && ContactForm.controls.message  .errors?.required" class="form-error-messages"
+      class="alert alert-danger">
+          <marquee behavior="" direction="">
+             Message is Required
+           </marquee>
+            </div> 
+    
+    
+            
+            <input type="submit" value="Contact Us" class="btn btn-outline-dark"/>
+            
+        </form>
+    </section>
+    

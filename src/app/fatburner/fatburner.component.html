@@ -1,0 +1,26 @@
+<section class="">
+    <div class="heading text-center">
+        <img src="../../assets/images/totalpre.png" alt="" class="w-100">
+    </div>
+
+    <br>
+    <br>
+    <div class="row  mt-3" >
+    <div class="col-lg-4 col-md-6 col-12" *ngFor="let Fatburners of Fatburners">
+
+        <div class="card" style="width: 20rem;">
+            <img [src]="Fatburners.img" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{Fatburners.heading}}</h5>
+              <p class="card-price">{{Fatburners.price}}</p>
+              <a (click)=addtocart(Fatburners) class="btn btn-dark">Add to cart</a>
+              
+            </div>
+          </div>
+
+    </div>
+</div>
+<br>
+<br>
+
+</section>
